@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Masayoshi Suryavanditya</title>
+
+	<!--L I N K-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+	<!--S I D E B A R -->
+	<input type="checkbox" id="check">
+	<div class="sidebar">
+		<ul>
+			<li>
+				<a href="#about">About</a>
+			</li>
+			<li>
+				<a href="#album">Album</a>
+			</li>
+			<li>
+				<a href="#contact">Contact</a>
+			</li>
+		</ul>
+	</div>
+
+	<!--H E A D E R-->
+	<header>
+		<div class="container">
+			<h1>
+				<a href="">Oshi's Web</a>
+			</h1>
+			<ul>
+				<li>
+					<a href="#about">About</a>
+				</li>
+				<li>
+					<a href="#album">Album</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+			</ul>
+
+			<!--M E N U-->
+			<label for="check" class="mobile-menu">
+				<i class="fas fa-bars fa-2x"></i>
+			</label>
+		</div>
+	</header>
+
+	<!--B A N N E R-->
+	<section class="banner">
+		<div class="container">
+			<div class="banner-left">
+				<img src="img/oshi.png">
+				<h2>Hi Guys
+					<br> Disini saya sebagai
+					<span class="efek-typing"></span>
+				</h2>
+				<p>Universitas Dian Nuswantoro</p>
+			</div>
+		</div>
+	</section>
+
+	<!--A B O U T-->
+	<section id="about">
+		<div class="container">
+			<h3>About</h3>
+
+			<p>Let me introduce Myself. My name is Masayoshi Suryavanditya. I was born in Semarang on August 17th 2004,
+				and still live
+				in Semarang. I am the oldest child of two. I have one sister. Music is one of my hobbies. I have played
+				the keyboard
+				since 9th grade and My dream is to make a band and perform on the same stage with My favorite artist,
+				Adelle. Coding
+				is My hobbies too, I usually made some code just for fun, and now this is My Assignment for today. I am
+				currently studying
+				as a first-year student at the Faculty of Computer Science, majoring in Informatics Engineering at the
+				Dian Nuswantoro
+				University.
+			</p>
+
+		</div>
+	</section>
+
+	<!--A L B U M-->
+	<section id="album">
+		<div class="container">
+			<h3>Album</h3>
+			<center>
+
+				<h2>Video HTML Minggu Ke-3</h2>
+				<video id="myVideo" width="320" height="300" controls>
+					<source src="vid/movie.mp4" type="video/mp4">
+				</video>
+				<br>
+				<button onclick="playVid()" type="button">Play Video</button>
+				<button onclick="pauseVid()" type="button">Pause Video</button>
+				<button onclick="durationVid()" type="button">Video Duration</button>
+
+			</center>
+
+			<script>
+				var vid = document.getElementById("myVideo");
+
+				function playVid() {
+					vid.play();
+				}
+
+				function pauseVid() {
+					vid.pause();
+				}
+
+				function durationVid() {
+					alert(vid.duration);
+				}
+			</script>
+
+
+		</div>
+	</section>
+
+	<!--C O N T A C T-->
+	<section id="contact">
+		<div class="container">
+			<h3>Contact</h3>
+			<div class="col-3">
+				<h4>Alamat</h4>
+				<p>Jl. Keruing Raya No.101, Semarang, Jawa Tengah</p>
+			</div>
+
+			<div class="col-3">
+				<h4>Email</h4>
+				<p>111202214005@mhs.dinus.ac.id</p>
+			</div>
+
+			<div class="col-3">
+				<h4>Telp.</h4>
+				<p>+62 8139 3933 263</p>
+			</div>
+		</div>
+	</section>
+
+	<!--F O O T E R-->
+	<footer>
+		<div class="container">
+			<small>Copyright &copy; 2022 - Masayoshi Suryavanditya.</small>
+		</div>
+	</footer>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>
